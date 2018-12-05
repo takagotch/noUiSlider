@@ -23,6 +23,31 @@ noUiSlider.create(slider, {
     'max': 100
   }
 });
+
+var range = document.getElementById('range');
+noUiSlider.create(range, {
+  range: {
+    'min': 1300,
+    'max': 3250
+  },
+  step: 150,
+  start: [1450, 2050, 2350, 3000],
+  margin: 300,
+  limit: 600,
+  connect: true,
+  direction: 'rtl',
+  orientation: 'vertical',
+  behaviour: 'tap-drag',
+  tooltips: true,
+  format: wNumb({
+    decimals: 0
+  }),
+  pips: {
+    mode: 'steps',
+    stepped: true,
+    density: 4
+  }
+});
 ```
 
 ```
