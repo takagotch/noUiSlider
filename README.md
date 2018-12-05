@@ -55,3 +55,23 @@ npm install nouislider
 yarn add nouislider
 ```
 
+```
+.noUi-target {
+  padding: 0 17px;
+}
+.noUi-base:before,
+.noUi-base:after {
+  width: 17px
+  content: "";
+  position: absolute;
+  top 0;
+  height: 100%;
+  display: block;
+}
+.noUi-base:before {
+  left: -17px;
+}
+.no-Ui-base:after {
+  left: 100%; 
+}
+```
